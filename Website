@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracio Timothy Andreas | Portofolio</title>
+    <style>
+        :root {
+            --primary-color: #00ADB5;
+            --bg-dark: #222831;
+            --bg-light: #393E46;
+            --text-light: #EEEEEE;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        /* Navigation */
+        nav {
+            background-color: var(--bg-light);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        nav h1 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        /* Header / Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 50px;
+        }
+        header h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header h2 span {
+            color: var(--primary-color);
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 600px;
+            color: #ccc;
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: var(--bg-dark);
+            padding: 10px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #007d84;
+            color: #fff;
+        }
+        /* Sections */
+        section {
+            padding: 80px 50px;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+        /* Skills Container */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .skill-card {
+            background-color: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,173,181,0.3);
+        }
+        .skill-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        /* Projects Container */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: var(--bg-light);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+        .project-card h3 {
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            background-color: var(--bg-light);
+        }
+        #contact p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1e24;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            header h2 {
+                font-size: 2.2rem;
+            }
+            section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>G. Timothy</h1>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header id="beranda">
+        <!-- Pastikan foto profilmu diberi nama profil.jpg dan ada di folder yang sama -->
+        <img src="profil.jpg" alt="Foto Profil Gracio" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary-color); margin-bottom: 20px;">
+        <h2>Halo, Saya <span>Gracio Timothy Andreas</span></h2>
+        <p>Siswa Teknik Audio Visual | Penggiat IoT & Pemodelan 3D | Spesialis Live Event</p>
+        <a href="#proyek" class="btn">Lihat Proyek Saya</a>
+    </header>
+
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+            Saya adalah siswa kelas 11 jurusan Teknik Audio Visual di SMK Katolik St. Louis. Saya memiliki minat dan antusiasme yang kuat pada persimpangan antara perangkat keras, perangkat lunak, dan produksi acara. Saya terbiasa mengoperasikan sistem live streaming, merancang model 3D digital, dan mengonfigurasi perangkat pintar Internet of Things (IoT). Saya selalu beradaptasi dengan teknologi baru untuk menciptakan solusi yang efisien dan inovatif.
+        </p>
+    </section>
+
+    <section id="keahlian">
+        <h2>Keahlian Teknis</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Audio Visual & Event</h3>
+                <p>OBS Studio, Manajemen Panggung, Setup Audio, Live Streaming, Liaison Officer (LO).</p>
+            </div>
+            <div class="skill-card">
+                <h3>Pemodelan 3D & Desain</h3>
+                <p>Autodesk Fusion, Tinkercad, Persiapan 3D Printing (Slicing).</p>
+            </div>
+            <div class="skill-card">
+                <h3>IoT & Elektronika</h3>
+                <p>Blynk, Smartlife, Konfigurasi Google Home, Troubleshooting Elektronika Dasar.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Alat Produktivitas (AI)</h3>
+                <p>Integrasi AI dalam alur kerja seperti Gamma (Presentasi), HappyScribe (Transkripsi), dan DeepSeek.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyek">
+        <h2>Pengalaman & Proyek Praktis</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <img src="1000501481.jpg" alt="Proyek Robot Arduino" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 15px; border: 1px solid #555;">
+                <h3>Robotik & Mikrokontroler</h3>
+                <p><strong>Fokus:</strong> Arduino Uno & Motor Driver.</p>
+                <p>Merakit dan memprogram prototipe mobil robot menggunakan mikrokontroler Arduino, mengintegrasikan sistem kelistrikan dan penggerak motor.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="1000498854.jpg" alt="Motherboard 3D Printer" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 15px; border: 1px solid #555;">
+                <h3>Hardware 3D Printer</h3>
+                <p><strong>Fokus:</strong> Perakitan & Troubleshooting.</p>
+                <p>Melakukan instalasi dan manajemen kabel pada motherboard, memastikan koneksi elektronika dan komponen printer 3D berjalan baik.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="1000468278.jpg" alt="Perakitan Audio Amplifier" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 15px; border: 1px solid #555;">
+                <h3>Sistem Audio Visual</h3>
+                <p><strong>Fokus:</strong> Perakitan Amplifier & Audio Mixer.</p>
+                <p>Menganalisis, merakit, dan melakukan perbaikan sistem sirkuit pada perangkat audio, sesuai dengan kompetensi utama jurusan Teknik Audio Visual.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="1000438232.jpg" alt="Sistem Otomasi PLC" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 15px; border: 1px solid #555;">
+                <h3>Otomasi Industri & PLC</h3>
+                <p><strong>Fokus:</strong> Sistem Pneumatik & Kontrol Elektrik.</p>
+                <p>Melakukan simulasi dan perangkaian sistem kontrol otomasi menggunakan modul PLC dan katup pneumatik untuk standar industri.</p>
+            </div>
+            
+            <div class="project-card">
+                <img src="1000478441.jpg" alt="Website Forum Anak GKJW" style="width: 100%; height: 200px; object-fit: contain; border-radius: 5px; margin-bottom: 15px; border: 1px solid #555; background-color:#fff;">
+                <h3>Pengembangan Web & IT</h3>
+                <p><strong>Fokus:</strong> Portal Informasi Digital.</p>
+                <p>Terlibat dalam publikasi dan pemanfaatan website responsif untuk Forum Anak GKJW sebagai sarana komunikasi digital yang informatif.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h2>Hubungi Saya</h2>
+        <p>Mari berdiskusi untuk kolaborasi atau proyek berikutnya!</p>
+        <br>
+        <p><strong>Email:</strong> Clotimothy@gmail.com</p>
+        <p><strong>Telepon / WhatsApp:</strong> +62 855-5612-6856</p>
+        <p><strong>Lokasi:</strong> Gresik, Jawa Timur</p>
+        <br>
+        <a href="mailto:Clotimothy@gmail.com" class="btn">Kirim Email</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gracio Timothy Andreas. Dibuat dengan antusiasme pada Teknologi.</p>
+    </footer>
+
+</body>
+</html>
